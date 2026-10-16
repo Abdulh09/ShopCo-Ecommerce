@@ -1,0 +1,9 @@
+.announcement-wrap{
+    background: var(--primary);
+    padding: 12px 0;
+}
+.announcement-wrap p{
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+}

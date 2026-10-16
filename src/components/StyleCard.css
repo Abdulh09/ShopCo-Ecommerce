@@ -1,0 +1,35 @@
+.style-card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    height: 289px;
+    overflow: hidden;
+}
+
+.style-card .cardImage img {
+    border-radius: 20px;
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.style-card .overlay {
+    position: absolute;
+    top: 36px;
+    left: 36px;
+    z-index: 2;
+}
+
+.style-card .overlay h3 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+/* .style-card .cardImage {
+    position: absolute;
+    inset: 0;
+    top: 0;
+    border-radius: 20px;
+} */

@@ -1,0 +1,63 @@
+:root {
+    --primary: #000000;
+    --color-white: #FFFFFF;
+    --color-hero-background: #F2F0F1;
+    --color-section-background: #F0F0F0;
+    --color-card-background: #F0EEED;
+    --color-neutral-400: #D6DCE5;
+    --color-text-muted: rgba(0, 0, 0, 0.6);
+    --color-text-subtle: rgba(0, 0, 0, 0.4);
+    --divider-color: rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--primary);
+    font-family: "Archivo Black", system-ui, -apple-system, sans-serif, serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 40px;
+
+    @media (min-width:1200px) {
+        font-size: 64px;
+        line-height: 64px;
+    }
+}
+
+h2 {
+    font-size: 24px;
+
+    @media (min-width:768px) {
+        font-size: 32px;
+    }
+
+    @media (min-width:1200px) {
+        font-size: 40px;
+    }
+
+}
+
+h3 {
+    font-size: 16px;
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    font-weight: 500;
+
+    @media (min-width:768px) {
+        font-size: 20px;
+    }
+}
+
+p {
+    color: var(--color-text-muted);
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+
+    @media (min-width:768px) {
+        font-size: 16px;
+    }
+}

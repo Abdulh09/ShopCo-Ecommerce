@@ -1,0 +1,102 @@
+header .nav-slot {
+    padding: 24px 0px 24px 52px;
+    position: relative;
+}
+
+.nav-slot .navbar .nav-link {
+    margin: 12px 0px;
+    padding: 0;
+    color: var(--primary);
+    font-family: "Inter", sans-serif;
+}
+
+.search-form {
+    position: relative;
+}
+
+.search-form .search-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.nav-slot .nav-right .search-form .form-control {
+    font-family: "Inter", sans-serif;
+    border: none;
+    border: 1px solid transparent;
+    background: var(--color-section-background);
+    border-radius: 2rem;
+    padding: 12px 16px 12px 44px;
+}
+
+.nav-slot .nav-right .search-form .form-control::placeholder {
+    color: var(--color-text-subtle);
+}
+
+.nav-slot .nav-right .search-form .form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.nav-slot .nav-right .action-btn .btn {
+    padding: 0;
+    border: none;
+}
+
+.nav-slot .navbar #navbarSupportedContent {
+    gap: 30px;
+}
+
+@media (min-width: 992px) {
+    header .nav-slot {
+        padding: 24px 0;
+    }
+
+    .nav-slot .navbar .nav-link {
+        margin: 0 24px 0 0;
+    }
+
+    .nav-slot .nav-right {
+        gap: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav-slot .navbar #navbarSupportedContent {
+        gap: 40px;
+    }
+
+    .nav-slot .nav-right .search-form .form-control {
+        min-width: 450px;
+    }
+}
+
+@media (max-width: 991px) {
+    .nav-slot .navbar .navbar-toggler {
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        position: absolute;
+        left: 0;
+    }
+
+    .nav-slot .navbar .navbar-toggler-icon {
+        background-image: url("../assets/hamburger-icon.svg");
+    }
+
+    .nav-slot .navbar #navbarSupportedContent {
+        position: absolute;
+        right: 0;
+        top: 75px;
+        z-index: 5;
+        width: 100%;
+        padding: 6px 14px;
+        background-color: rgb(207, 205, 205);
+        transition: all .3s cubic-bezier(0.14, 0.51, 0.59, 0.82);
+    }
+}

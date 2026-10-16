@@ -1,0 +1,55 @@
+.brand-wrap {
+    background-color: var(--primary);
+    padding: 42px 0;
+}
+
+.new-arrival {
+    padding: 72px 0 64px;
+    border-bottom: 1px solid var(--divider-color);
+}
+
+.new-arrival h2,
+.top-selling h2 {
+    margin-bottom: 55px;
+}
+
+.top-selling {
+    padding: 64px 0 80px;
+}
+
+.viewBtn {
+    padding-top: 36px;
+}
+
+.dress-style-wrap .dress-style {
+    padding: 40px 28px;
+    background-color: var(--color-section-background);
+    border-radius: 40px;
+}
+
+.dress-style-wrap .dress-style h2 {
+    margin-bottom: 30px;
+}
+
+.testimonial {
+    position: relative;
+    padding: 80px 0;
+}
+
+.testimonial h2 {
+    margin-bottom: 40px;
+}
+
+@media (min-width:1200px) {
+    .dress-style-wrap .dress-style {
+        padding: 76px 64px;
+    }
+
+    .dress-style-wrap .dress-style h2 {
+        margin-bottom: 60px;
+    }
+
+    .testimonial {
+        padding: 80px 0 170px;
+    }
+}

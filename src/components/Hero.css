@@ -1,0 +1,78 @@
+.hero-wrapper {
+    background-color: var(--color-hero-background);
+    padding-top: 40px;
+}
+
+.hero-wrapper p {
+    margin: 32px 0;
+}
+
+.hero-wrapper .milestones {
+    padding-top: 20px;
+    gap: 14px;
+}
+
+.hero-wrapper .milestones span {
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: -2px;
+    display: block;
+}
+
+.hero-img {
+    height: 663px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-img img {
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+}
+
+.hero-img .element1 {
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+
+.hero-img .element2 {
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+}
+
+.hero-img .element2 img {
+    width: 56px;
+    height: 56px;
+}
+
+.hero-wrapper .milestones .divider {
+    display: none;
+}
+
+@media (min-width:992px) {
+    .hero-wrapper {
+        padding-top: 0;
+    }
+
+    .hero-wrapper .milestones {
+        padding-top: 48px;
+    }
+
+    .hero-wrapper .milestones span {
+        font-size: 40px;
+    }
+
+}
+
+@media (min-width:1200px) {
+    .hero-wrapper .milestones .divider {
+        display: block;
+        width: 1px;
+        height: 78px;
+        background-color: var(--divider-color);
+    }
+}

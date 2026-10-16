@@ -1,0 +1,22 @@
+.testimonial-card {
+    /* max-width: 400px; */
+    width: 100%;
+    min-height: 240px;
+    padding: 28px 32px;
+    border: 1px solid var(--divider-color);
+    border-radius: 20px;
+}
+
+.testimonial-card .ratingicon img {
+    width: 24px;
+    height: 24px;
+}
+
+.testimonial-card .rating {
+    padding-bottom: 15px;
+}
+
+.testimonial-card h3 {
+    margin-bottom: 12px;
+    font-weight: 600;
+}

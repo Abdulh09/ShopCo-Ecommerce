@@ -1,0 +1,24 @@
+.btn-secondary {
+    font-family: "Inter", sans-serif;
+    background-color: white;
+    border: 1px solid var(--divider-color);
+    border-radius: 3rem;
+    padding: 13px 54px;
+    min-width: 218px;
+    width: 100%;
+    font-weight: 500;
+    color: var(--primary);
+
+    @media (min-width:768px) {
+        width: auto;
+    }
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+.btn-secondary:active {
+    background-color: var(--primary) !important;
+}

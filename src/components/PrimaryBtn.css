@@ -1,0 +1,14 @@
+.btn-primary {
+    font-family: "Inter", sans-serif;
+    background-color: var(--primary);
+    border: 1px solid transparent;
+    border-radius: 3rem;
+    padding: 14px 54px;
+    min-width: 210px;
+    width: 100%;
+    font-weight: 500;
+
+    @media (min-width:768px) {
+        width: auto;
+    }
+}
