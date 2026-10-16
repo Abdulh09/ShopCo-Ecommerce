@@ -1,7 +1,7 @@
 import "./ProductCard.css";
 import { Link } from "react-router";
-import starFull from "../assets/star.svg";
-import starHalf from "../assets/star-half.svg";
+import starFull from "../assets/Star.svg";
+import starHalf from "../assets/Star-half.svg";
 
 const buildStars = (rating, outOf = 5) => {
   const fullStars = Math.floor(rating);

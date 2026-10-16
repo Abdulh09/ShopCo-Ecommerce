@@ -1,5 +1,5 @@
 import "./TestimonialCard.css";
-import starFull from "../assets/star.svg";
+import starFull from "../assets/Star.svg";
 
 const TestimonialCard = ({ title, tickSrc, reviewText }) => {
   return (
