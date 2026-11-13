@@ -3,7 +3,7 @@
     background-color: var(--primary);
     border: 1px solid transparent;
     border-radius: 3rem;
-    padding: 14px 54px;
+    padding: 14px 0px;
     min-width: 210px;
     width: 100%;
     font-weight: 500;
@@ -11,4 +11,9 @@
     @media (min-width:768px) {
         width: auto;
     }
+}
+
+.btn-primary:active, .btn-primary:hover{
+    background-color: var(--primary) !important;
+    border: 1px solid var(--primary) !important;
 }

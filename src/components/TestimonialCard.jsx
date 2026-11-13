@@ -1,16 +1,23 @@
 import "./TestimonialCard.css";
-import starFull from "../assets/Star.svg";
+// import starFull from "../assets/Star.svg";
+import Rating from "./Rating";
 
-const TestimonialCard = ({ title, tickSrc, reviewText }) => {
+const TestimonialCard = ({
+  title,
+  tickSrc,
+  reviewText,
+  postDate,
+  rating,
+  ratingOutOf,
+  showRatingText,
+}) => {
   return (
     <div className="testimonial-card">
-      <div className="rating">
-        <div className="ratingicon d-flex gap-1">
-          {Array.from({ length: 5 }, (_, index) => (
-            <img key={index} src={starFull} alt="" />
-          ))}
-        </div>
-      </div>
+      <Rating
+        rating={rating}
+        ratingOutOf={ratingOutOf || 5}
+        showText={showRatingText}
+      />
       <h3 className="d-flex align-items-center gap-1">
         {title}
         <span>
@@ -18,6 +25,7 @@ const TestimonialCard = ({ title, tickSrc, reviewText }) => {
         </span>
       </h3>
       <p>{reviewText}</p>
+      <span className="post-date">{postDate}</span>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import { urlFor } from "../lib/sanityClient";
 const SanityImage = ({
   image,
   alt = "",
-  widths = [400, 800, 1200],
+  widths = [400, 800],
   sizes = "100vw",
   className,
   fetchPriority = "auto",

@@ -13,10 +13,18 @@
 }
 
 .testimonial-card .rating {
-    padding-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .testimonial-card h3 {
     margin-bottom: 12px;
     font-weight: 600;
+}
+
+.testimonial-card .post-date {
+    display: block;
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    margin-top: 20px;
 }

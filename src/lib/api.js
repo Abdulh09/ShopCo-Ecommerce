@@ -14,6 +14,7 @@ export const toCardProps = (p) => ({
   ratingOutOf: 5,
   price: p.price,
 });
+
 export const getProductBySlug = (slug) =>
   client.fetch(
     `*[_type == "product" && slug.current == $slug][0]{
@@ -22,6 +23,7 @@ export const getProductBySlug = (slug) =>
     }`,
     { slug }
   );
+
 export const getFeaturedProducts = () =>
   client.fetch(`*[_type == "product" && featured == true][0...4]{
     _id, name, "slug": slug.current, price, rating, image

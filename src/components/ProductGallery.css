@@ -1,0 +1,60 @@
+.product-gallery-wrap {
+  gap: 14px;
+  align-items: flex-start;
+}
+
+/* ---------- Thumbnails (left) ---------- */
+#gallery-thumbs {
+  width: 100%;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+#gallery-thumbs .swiper-slide {
+  border-radius: 20px;
+  background: #f0eeed;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+#gallery-thumbs .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Swiper adds this class to the thumb that matches the main slide */
+#gallery-thumbs .swiper-slide-thumb-active {
+  border-color: #000;
+}
+
+/* ---------- Main image (right) ---------- */
+#gallery-main {
+  width: 100%;
+  /* height: 530px; */
+  border-radius: 20px;
+  background: #f0eeed;
+  margin: 0;
+}
+
+#gallery-main .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Stack on mobile: main image on top, thumbs below as a row */
+@media (min-width: 992px) {
+  #gallery-thumbs {
+    width: 140px;
+    height: 460px;
+  }
+
+  #gallery-main {
+    max-width: 370px;
+    border-radius: 20px;
+    background: transparent;
+    margin: 0;
+  }
+}
